@@ -4,12 +4,17 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     font-family: Arial, sans-serif;
     background-color: #141414;
     color: #fff;
     font-family: Arial, sans-serif;
     text-align: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -77,6 +82,7 @@ nav ul li:hover .submenu {
 }
 
 main {
+    flex: 1;
     padding: 20px;
     text-align: center;
 }
@@ -91,9 +97,8 @@ footer {
     background-color: #202020;
     text-align: center;
     padding: 10px;
-    position: absolute;
     width: 100%;
-    bottom: 0;
+    display: block;
 }
 nav ul .submenu {
     display: none;
@@ -180,7 +185,7 @@ h1, h2 {
 }
 
 p {
-    text-align: justify;
+    text-align: center;
     margin: 0 auto;
     width: 80%;
 }
@@ -216,6 +221,9 @@ p {
     margin-bottom: 10px;
     font-size: 1.2em;
 }
+
+
+
 
 
 
