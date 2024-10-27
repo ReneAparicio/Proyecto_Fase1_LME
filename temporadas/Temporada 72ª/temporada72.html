@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temporada 72ª</title>
-    <link rel="stylesheet" href="../../css/style.css">  <!-- doble ../ porque están en diferentes subcarpetas -->
+    <link rel="stylesheet" href="../../css/style.css">  
+    <link rel="stylesheet" href="../../css/style_moviles.css">
+    <link rel="icon" href="../../img/F1-logo.png" type="image/png">
 </head>
-<body>
+<body background="../../img/Fondo de pantalla.jpg">
     <header>
         <div class="logo">
-            <a href="../../index.html" id="logo-link">
-                <img src="../../img/F1-logo.png" alt="F1 Logo">
-            </a>
-        </div>
+        <a href="../../index.html" id="logo-link">
+            <img src="../../img/F1-logo.png" alt="F1 Logo">
+        </a>
+    </div>
+    <!-- Checkbox oculto -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <!-- Label que actuará como botón de menú hamburguesa -->
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
         <nav>
             <ul>
                 <li><a href="#">Temporadas</a>
@@ -35,10 +41,9 @@
             <p>Fue una de las más emocionantes y polémicas de la historia reciente. Este año se disputaron 22 carreras, y el título se decidió en la última carrera en Abu Dabi entre Max Verstappen y Lewis Hamilton.
                Max Verstappen (Red Bull) se coronó campeón mundial por primera vez tras una batalla feroz con Lewis Hamilton (Mercedes), que duró toda la temporada y culminó en un final dramático en la última vuelta del Gran Premio de Abu Dabi. El título de constructores fue para Mercedes, lo que representó su octavo título consecutivo en esta categoría.</p>
         </section>
-
         <section class="content">
             <h2>Equipos y Pilotos</h2>
-            <p>En la temporada 2021 participaron 10 equipos y 20 pilotos:</p>
+            <p>En la temporada 2021 participaron 10 equipos y 20 pilotos:</p><br>
             
             <div class="team-section">
                 <div class="team">
@@ -93,40 +98,115 @@
                 </div>
             </div>
 
-            <h2>Carreras</h2>
-            <p>La temporada de 2021 incluyó un récord de 22 Grandes Premios, algunos de los más destacados fueron:</p>
-            <p><strong>Gran Premio de Mónaco:</strong> Ganado por Max Verstappen.<br>
-            <strong>Gran Premio de Gran Bretaña:</strong> La primera carrera de clasificación al sprint. Ganada por Lewis Hamilton.<br>
-            <strong>Gran Premio de Italia:</strong> Daniel Ricciardo de McLaren consiguió una sorprendente victoria.<br>
-            <strong>Gran Premio de Brasil:</strong> Max Verstappen y Lewis Hamilton protagonizaron una intensa batalla, con Hamilton ganando tras salir en la décima posición.<br>
-            <strong>Gran Premio de Abu Dabi:</strong> La carrera final y decisiva de la temporada, donde Max Verstappen ganó su primer título mundial.</p>
+            <section class="races">
+                <h2>Carreras</h2>
+                <p>La temporada de 2021 incluyó un récord de 22 Grandes Premios, algunos de los más destacados fueron:</p>
+                
+                <div class="race-cards">
+                    <div class="race-card">
+                        <h3>Gran Premio de Mónaco</h3>
+                        <p>Ganado por Max Verstappen.</p>
+                    </div>
+                    <div class="race-card">
+                        <h3>Gran Premio de Gran Bretaña</h3>
+                        <p>La primera carrera de clasificación al sprint. Ganada por Lewis Hamilton.</p>
+                    </div>
+                    <div class="race-card">
+                        <h3>Gran Premio de Italia</h3>
+                        <p>Daniel Ricciardo de McLaren consiguió una sorprendente victoria.</p>
+                    </div>
+                    <div class="race-card">
+                        <h3>Gran Premio de Brasil</h3>
+                        <p>Max Verstappen y Lewis Hamilton protagonizaron una intensa batalla, con Hamilton ganando tras salir en la décima posición.</p>
+                    </div>
+                    <div class="race-card">
+                        <h3>Gran Premio de Abu Dabi</h3>
+                        <p>La carrera final y decisiva de la temporada, donde Max Verstappen ganó su primer título mundial.</p>
+                    </div>
+                </div>
+            </section>
+            
 
-            <h2>Posiciones Finales (Top 5)</h2>
-            <p><strong>Pilotos:</strong><br>
-            1. Max Verstappen (Red Bull Racing Honda) – 395.5 puntos<br>
-            2. Lewis Hamilton (Mercedes) – 387.5 puntos<br>
-            3. Valtteri Bottas (Mercedes) – 226 puntos<br>
-            4. Sergio Pérez (Red Bull Racing Honda) – 190 puntos<br>
-            5. Carlos Sainz (Ferrari) – 164.5 puntos</p>
-
-            <p><strong>Constructores:</strong><br>
-            1. Mercedes – 613.5 puntos<br>
-            2. Red Bull Racing Honda – 585.5 puntos<br>
-            3. Ferrari – 323.5 puntos<br>
-            4. McLaren Mercedes – 275 puntos<br>
-            5. Alpine Renault – 155 puntos</p>
-
-            <h2>Carrera Final (Gran Premio de Abu Dabi)</h2>
-            <p>La última carrera de la temporada, el Gran Premio de Abu Dabi, fue una de las más emocionantes en la historia del deporte. Max Verstappen y Lewis Hamilton llegaron empatados en puntos (369.5 cada uno) a esta última carrera, una situación que no se había visto desde 1974. Durante la carrera, Hamilton lideraba cómodamente, pero un coche de seguridad en las últimas vueltas cambió completamente el panorama.</p>
-
-            <p>La controversia vino cuando, en la última vuelta, la dirección de carrera decidió permitir que solo algunos de los rezagados recuperaran su vuelta, lo que colocó a Verstappen justo detrás de Hamilton con neumáticos frescos. En esa vuelta final, Verstappen superó a Hamilton, ganando la carrera y su primer campeonato mundial.</p>
-
-            <h2>Polémica Final</h2>
-            <p>La decisión de la dirección de carrera fue muy criticada por Mercedes, que presentó protestas contra el resultado, alegando que las reglas no se habían seguido correctamente. Sin embargo, las protestas fueron rechazadas, y Max Verstappen fue declarado campeón.</p>
+            <section class="content">
+                <h2>Posiciones Finales (Top 5)</h2>
+                
+                <table class="table-styled">
+                    <tr>
+                        <th>Posición</th>
+                        <th>Piloto</th>
+                        <th>Puntos</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Max Verstappen (Red Bull Racing Honda)</td>
+                        <td>395.5</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Lewis Hamilton (Mercedes)</td>
+                        <td>387.5</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Valtteri Bottas (Mercedes)</td>
+                        <td>226</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Sergio Pérez (Red Bull Racing Honda)</td>
+                        <td>190</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Carlos Sainz (Ferrari)</td>
+                        <td>164.5</td>
+                    </tr>
+                </table>
+            </section>
+            <section class="race-final">
+                <h2>Carrera Final (Gran Premio de Abu Dabi)</h2>
+                <div class="race-content">
+                    <img src="../Temporada 72ª/imagenes72/Babudhabi.jpg" alt="Gran Premio de Abu Dabi" class="race-image">
+                    <p>La última carrera de la temporada, el Gran Premio de Abu Dabi, fue una de las más emocionantes en la historia del deporte. Max Verstappen y Lewis Hamilton llegaron empatados en puntos (369.5 cada uno) a esta última carrera, una situación que no se había visto desde 1974. Durante la carrera, Hamilton lideraba cómodamente, pero un coche de seguridad en las últimas vueltas cambió completamente el panorama.</p>
+                </div>
+            </section>
+            <section class="controversy">
+                <p class="highlighted-text">La controversia vino cuando, en la última vuelta, la dirección de carrera decidió permitir que solo algunos de los rezagados recuperaran su vuelta, lo que colocó a Verstappen justo detrás de Hamilton con neumáticos frescos. En esa vuelta final, Verstappen superó a Hamilton, ganando la carrera y su primer campeonato mundial.</p>
+                
+                <h2>Polémica Final</h2>
+                <p class="highlighted-text">La decisión de la dirección de carrera fue muy criticada por Mercedes, que presentó protestas contra el resultado, alegando que las reglas no se habían seguido correctamente. Sin embargo, las protestas fueron rechazadas, y Max Verstappen fue declarado campeón.</p>
+            </section>     
         </section>
     </main>
-    <footer>
-        <p>2024 F1 Web</p>
+    <br><br><br>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h2>Sobre Nosotros</h2>
+                <p>Somos una plataforma dedicada a brindarte la mejor cobertura de la Fórmula 1, temporada tras temporada, con información detallada, análisis de carreras y perfiles de pilotos.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h2>Enlaces Útiles</h2>
+                <ul>
+                    <li><a href="#about">Sobre Nosotros</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h2>Contacto</h2>
+                <p><strong>Teléfono:</strong> +503 7398 1658</p>
+                <p><strong>Email:</strong> reneaparicioruiz@gmail.com</p>
+                <p><strong>Dirección:</strong> Ciudadela Don Bosco, Soyapango, San Salvador</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 UDB.</p>
+        </div>
     </footer>
 </body>
 </html>

@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_moviles.css">
+    <link rel="icon" href="img/F1-logo.png" type="image/png">
 </head>
-<body>
+<body background="img/Fondo de pantalla.jpg">
     <header>
         <div class="logo">
             <a href="index.html" id="logo-link">
                 <img src="img/F1-logo.png" alt="F1 Logo">
             </a>
         </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
         <nav>
             <ul>
                 <li><a href="#">Temporadas</a>
@@ -41,8 +45,35 @@
         </section>
     </main>
 
-    <footer>
-        <p>2024 F1 Web</p>
+    <br><br><br>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h2>Sobre Nosotros</h2>
+                <p>Somos una plataforma dedicada a brindarte la mejor cobertura de la Fórmula 1, temporada tras temporada, con información detallada, análisis de carreras y perfiles de pilotos.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h2>Enlaces Útiles</h2>
+                <ul>
+                    <li><a href="#about">Sobre Nosotros</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h2>Contacto</h2>
+                <p><strong>Teléfono:</strong> +503 7398 1658</p>
+                <p><strong>Email:</strong> reneaparicioruiz@gmail.com</p>
+                <p><strong>Dirección:</strong> Ciudadela Don Bosco, Soyapango, San Salvador</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 UDB.</p>
+        </div>
     </footer>
 </body>
 </html>

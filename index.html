@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F1 Web</title>
+    <title>F1 Sport Racing</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_moviles.css">
+    <link rel="icon" href="img/F1-logo.png" type="image/png">
 </head>
-<body>
+<body background="img/Fondo de pantalla.jpg">
     <header>
         <div class="logo">
-            <a href="index.html" id="logo-link">
-                <img src="img/F1-logo.png" alt="F1 Logo">
-            </a>
-        </div>
+        <a href="index.html" id="logo-link">
+            <img src="img/F1-logo.png" alt="F1 Logo">
+        </a>
+    </div>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
         <nav>
             <ul>
                 <li><a href="#">Temporadas</a>
@@ -30,13 +34,78 @@
         </nav>
     </header>
     <main>
-        <section class="intro">
-            <h1>Bienvenidos al Mundo de la Fórmula 1</h1>
-            <p>La Fórmula 1 es el espectáculo máximo de la velocidad, donde pilotos valientes controlan bestias de 1,000 caballos...</p>
+            <section class="slider">
+            <div class="slider-content">
+                <div class="quote-item">
+                    <p class="quote">"En la Fórmula 1, ganar no se trata solo de velocidad, sino de precisión, estrategia y adaptabilidad. No es suficiente ser rápido, debes ser inteligente." - Alain Prost</p>
+                </div>
+                <div class="quote-item">
+                    <p class="quote">"Cada equipo en la Fórmula 1 no compite solo contra otros equipos, sino también contra el tiempo y la tecnología. La innovación es la clave para la victoria." - Toto Wolff</p>
+                </div>
+                <div class="quote-item">
+                    <p class="quote">"La Fórmula 1 no es solo una prueba de habilidades de los pilotos, sino un espectáculo de la ingeniería más avanzada. Cada pieza cuenta para el éxito." - Adrian Newey</p>
+                </div>
+            </div>
+            <img src="img/max principal.png" alt="Piloto de Fórmula 1" class="pilot-img">
         </section>
+<!-- Sección de Historia de la Fórmula 1 -->
+<section class="f1-history">
+    <h2>Historia de la Fórmula 1</h2>
+    <div class="f1-history-content">
+        <!-- Imagen a la izquierda y texto a la derecha -->
+        <img src="img/f1 comienzos.jpg" alt="Comienzos de la F1">
+        <p>La Fórmula 1, también conocida como F1, es la competencia de automovilismo más prestigiosa y rápida del mundo, que ha evolucionado desde sus orígenes en las carreras de Gran Premio de Europa en la década de 1920 y 1930. La categoría moderna de F1 fue formalmente establecida en 1950 por la Federación Internacional del Automóvil (FIA), organismo que aún la regula.</p>
+
+        <!-- Imagen a la derecha y texto a la izquierda -->
+        <p><strong>¿Cómo comenzó la Fórmula 1?</strong> La idea de la F1 como una competición mundial tomó forma después de la Segunda Guerra Mundial, en un momento en que se reorganizaron muchas instituciones deportivas en Europa. La primera temporada oficial de la F1 se llevó a cabo en 1950, comenzando con el Gran Premio de Gran Bretaña en Silverstone. En esa temporada inaugural, Giuseppe Farina, piloto de Alfa Romeo, se coronó campeón del mundo.</p>
+        <img src="img/piloto viejo.jpg" alt="Pilotos Legendarios">
+
+        <!-- Imagen a la izquierda y texto a la derecha -->
+        <img src="img/novedad.jpeg" alt="Innovaciones en F1">
+        <p><strong>¿Quién fundó la Fórmula 1?</strong> Aunque no hubo un único fundador, el campeonato fue organizado y lanzado por la FIA (entonces conocida como Asociación Internacional de Automóviles Reconocidos). La FIA trabajó con equipos y pilotos para establecer un conjunto de reglas y estándares de seguridad.</p>
+
+        <!-- Imagen a la derecha y texto a la izquierda -->
+        <p><strong>Innovación y tecnología</strong> La Fórmula 1 es también un laboratorio de innovación. Cada equipo trabaja intensamente en el diseño de sus autos para maximizar su rendimiento, desde aerodinámica hasta tecnología de materiales. Los avances desarrollados en la F1 muchas veces han terminado aplicándose en autos de producción masiva.</p>
+        <img src="img/FIA.jpg" alt="FIA">
+
+        <p><strong>Pilotos legendarios</strong> A lo largo de los años, muchos pilotos legendarios han marcado hitos en la F1. Nombres como Juan Manuel Fangio, Ayrton Senna, Michael Schumacher y Lewis Hamilton se destacan por sus impresionantes habilidades y récords.</p>
+        <p><em>Curiosidades: La F1 es la categoría de carreras de mayor velocidad y exigencia técnica. El campeonato de F1 se lleva a cabo en circuitos icónicos en todo el mundo.</em></p>
+    </div>
+</section>
+
+
+
+
     </main>
-    <footer>
-        <p>2024 F1 Web</p>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h2>Sobre Nosotros</h2>
+                <p>Somos una plataforma dedicada a brindarte la mejor cobertura de la Fórmula 1, temporada tras temporada, con información detallada, análisis de carreras y perfiles de pilotos.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h2>Enlaces Útiles</h2>
+                <ul>
+                    <li><a href="#about">Sobre Nosotros</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h2>Contacto</h2>
+                <p><strong>Teléfono:</strong> +503 7398 1658</p>
+                <p><strong>Email:</strong> reneaparicioruiz@gmail.com</p>
+                <p><strong>Dirección:</strong> Ciudadela Don Bosco, Soyapango, San Salvador</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 UDB.</p>
+        </div>
     </footer>
 </body>
 </html>

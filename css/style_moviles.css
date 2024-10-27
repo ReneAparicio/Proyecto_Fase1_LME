@@ -1,0 +1,230 @@
+/* Estilos base para todos los dispositivos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    background-size: cover; /* La imagen de fondo cubre todo el espacio disponible */
+    background-attachment: fixed; /* La imagen de fondo permanece fija al hacer scroll */
+    background-position: center; /* La imagen de fondo se centra correctamente */
+    background-repeat: no-repeat; /* La imagen de fondo no se repite */
+}
+
+header, nav ul li a, main .intro img, .gallery h1, .images img {
+    transition: all 0.3s ease; /* Transición suave para todos estos elementos */
+}
+
+/* Estilos específicos para dispositivos con un ancho hasta de 768px */
+@media (max-width: 768px) {
+    header .logo img {
+        width: 80px; /* Logo más pequeño */
+    }
+
+    main .intro img {
+        width: 80%; /* Imágenes introductorias ocupan más del contenedor */
+    }
+
+    .gallery {
+        padding: 10px; /* Menos padding en la galería */
+    }
+
+    .images img {
+        width: 100%; /* Imágenes se ajustan al ancho completo */
+    }
+
+    .team-section {
+        grid-template-columns: 1fr; /* Sección de equipo en una sola columna */
+    }
+
+    .creator img {
+        width: 200px; /* Imágenes de creadores más pequeñas */
+        height: 200px;
+    }
+
+    .slider {
+        width: 80%; /* El slider ocupa menos ancho */
+        padding: 5px 10px; /* Menos padding en el slider */
+        margin: 100px auto; /* Margen ajustado */
+    }
+
+    .f1-history-content {
+        grid-template-columns: 1fr; /* Contenido de historia F1 en una columna */
+    }
+
+    .contact {
+        padding: 40px; /* Menos padding en contacto */
+    }
+}
+
+/* Estilo para todos los dispositivos */
+.pilot-img {
+    width: 350px; /* Tamaño ajustado de la imagen del piloto */
+    height: auto;
+    position: absolute;
+    right: -130px;
+    bottom: 0px;
+    z-index: 2;
+    transform: translateY(0);
+}
+
+/* Ocultar la imagen en dispositivos con una anchura máxima de 768px */
+@media (max-width: 768px) {
+    .pilot-img {
+        display: none; /* La imagen del piloto se oculta */
+    }
+}
+
+/* Estilos para dispositivos con un ancho hasta de 480px */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column; /* Los elementos del header se apilan verticalmente */
+        align-items: center; /* Alineación central de los elementos */
+    }
+
+    .gallery h1 {
+        font-size: 1.5em; /* Texto más pequeño en la galería */
+    }
+
+    .contact input[type="text"], .contact input[type="email"], .contact textarea {
+        font-size: 0.8em; /* Tamaño de fuente más pequeño para los campos de contacto */
+    }
+}
+.menu-toggle {
+    display: none; /* Ocultar el checkbox */
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+/* Ajustes para el submenú desplegable */
+.submenu {
+    position: absolute; /* Posiciona el submenú sobre los otros elementos */
+    z-index: 10; /* Asegura que el submenú esté en frente */
+    background-color: #e0e0e0; /* Fondo del submenú */
+    padding: 10px;
+    display: none;
+}
+
+/* Mostrar el submenú al pasar el mouse sobre "Temporadas" */
+nav ul li:hover .submenu {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    /* Estilos móviles */
+    .menu-icon {
+        display: block;
+        color: #000000;
+    }
+
+    nav ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        text-align: center;
+        width: 100%;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px;
+    }
+
+    /* Mostrar el menú cuando el checkbox está marcado */
+    #menu-toggle:checked + .menu-icon + nav ul {
+        display: flex;
+    }
+
+    /* Asegura que el submenú esté en frente en dispositivos móviles también */
+    .submenu {
+        position: relative;
+        z-index: 10;
+    }
+}
+
+/* Estilos para las tarjetas de carreras en dispositivos pequeños */
+@media (max-width: 768px) {
+    .race-cards {
+        grid-template-columns: 1fr; /* Cambia a una columna en dispositivos pequeños */
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .race-card {
+        padding: 15px; /* Ajusta el padding para dispositivos pequeños */
+        font-size: 0.9em; /* Tamaño de fuente más pequeño */
+        text-align: left; /* Alinea el texto a la izquierda para una mejor legibilidad */
+    }
+
+    .race-card h3 {
+        font-size: 1.3em; /* Tamaño de fuente ajustado para el título */
+        text-align: center; /* Centra el título */
+        color: #ffcc00; /* Asegura el color dorado en el título */
+    }
+
+    .race-card p {
+        text-align: justify; /* Alineación justificada para el texto */
+    }
+}
+
+/* Estilos para la galería en dispositivos pequeños */
+@media (max-width: 768px) {
+    .images {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Dos columnas en pantallas medianas */
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .images img {
+        width: 100%; /* Las imágenes ocupan el ancho completo de su contenedor */
+        height: auto;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .images {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Alinea todo al inicio, sin centrar */
+        text-align: left;
+    }
+
+    .footer-container > div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-about p, .footer-links, .footer-contact {
+        margin: 0; /* Elimina márgenes adicionales */
+        padding: 0; /* Elimina cualquier padding extra */
+    }
+
+    .footer-about p {
+        line-height: 1.5; /* Ajusta el espaciado entre líneas */
+    }
+}
+
+
+
+
+
+
+
