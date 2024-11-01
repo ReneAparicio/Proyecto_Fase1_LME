@@ -1,0 +1,119 @@
+/* Estilos específicos para tablets con un ancho de 769px a 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+    header .logo img {
+        width: 90px; /* Logo ajustado para tablets */
+    }
+
+   
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 15px; /* Espacio ajustado entre elementos */
+    }
+
+    main .intro img {
+        width: 70%; /* Imágenes introductorias ocupan menos del contenedor */
+    }
+
+    .gallery {
+        padding: 15px;
+    }
+
+    .images {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Dos columnas en tablets */
+        gap: 20px;
+    }
+
+    .team-section {
+        grid-template-columns: 1fr 1fr; /* Dos columnas en tablets */
+        gap: 20px;
+    }
+
+    .creator img {
+        width: 250px; /* Tamaño de imagen moderado */
+        height: 250px;
+    }
+
+    .slider {
+        width: 70%; /* Ajuste del ancho del slider */
+        padding: 15px 20px;
+        margin: 150px auto; /* Margen ajustado */
+    }
+
+    .f1-history-content {
+        grid-template-columns: 1fr 1fr; /* Contenido en dos columnas */
+        gap: 30px;
+    }
+
+    .contact {
+        padding: 60px; /* Ajuste de padding para tablets */
+        max-width: 800px;
+        margin: 50px auto;
+    }
+    .race-cards {
+        grid-template-columns: 1fr 1fr; /* Dos columnas en tablets */
+        gap: 20px;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .footer-container > div {
+        flex: 1;
+        margin: 0 10px;
+    }
+
+    /* Ajuste de elementos de texto */
+    .gallery h1, .f1-history h2, .contact h1, .race-card h3 {
+        font-size: 1.8em; /* Tamaño de fuente adaptado */
+    }
+
+    .contact input[type="text"],
+    .contact input[type="email"],
+    .contact textarea {
+        font-size: 1em; /* Fuente moderada para tablets */
+    
+
+        
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .slider {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 80%;
+            margin: 20px auto; /* Añade un margen superior para separar del menú */
+            padding: 20px;
+            border-radius: 10px;
+        }
+    
+        .quote-item {
+            text-align: center;
+            line-height: 1.5;
+            font-size: 1.1em;
+            max-width: 60%; /* Ancho limitado del texto */
+        }
+    
+        .pilot-img {
+            position: absolute;
+            bottom: 0; /* Coloca la imagen justo en el borde inferior */
+            right: 10px; /* Ajusta la posición desde la derecha */
+            width: 30%; /* Aumenta el tamaño de la imagen */
+            max-width: 120px; /* Tamaño máximo de la imagen */
+        }
+    }
+    
+    
+    
+    
+    
+    
+
+}

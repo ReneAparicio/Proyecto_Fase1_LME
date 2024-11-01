@@ -62,7 +62,8 @@ nav ul .submenu {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: #d4d4d4;
     border-radius: 5px;
     list-style: none;
@@ -93,18 +94,18 @@ nav ul .submenu li {
 }
 
 nav ul .submenu li a {
+    display: block;
+    text-align: center; /* Centrar el texto en cada enlace */
+    padding: 10px 0;
+    width: 100%; /* Asegura que cada enlace ocupe el ancho completo */
     color: #000000;
     background-color: transparent;
-    display: block;
-    text-align: left;
-    padding: 10px 15px;
-    width: 100%;
     box-sizing: border-box;
 }
 
 nav ul .submenu li a:hover {
     background-color: #d4d4d4;
-    color: #000000;
+    color: #f30000;
 }
 
 #logo-link {
@@ -269,13 +270,14 @@ main h1 {
 }
 
 .pilot-img {
-    width: 350px; /* Tamaño ajustado de la imagen del piloto */
+    width: 350px;
     height: auto;
-    position: absolute; /* Posicionar de manera absoluta */
-    right: -130px; /* Ajustar la imagen hacia la derecha */
-    bottom: 0px; /* Ajustar la posición de la imagen */
-    z-index: 2; /* Asegurarse de que la imagen quede sobre el cuadro */
-    transform: translateY(0); /* Eliminar el desplazamiento vertical extra */
+    position: absolute;
+    right: -130px;
+    bottom: 0px;
+    z-index: 2;
+    transform: translateX(-40px) scale(1); /* Ajusta según la posición inicial y tamaño */
+    transition: transform 0.5s ease; /* Transición suave al hacer zoom */
 }
 
 /* Tamaño de la fuente */
@@ -284,6 +286,13 @@ main h1 {
     color: #fff;
     line-height: 1.6em; /* Ajustar el interlineado */
     text-align: left; /* Texto alineado a la izquierda */
+}
+
+/* Efecto de zoom y desplazamiento adicional en pantallas grandes */
+@media (min-width: 1024px) {
+    .pilot-img {
+        transform: translateX(-50px) scale(1.1); /* Ajusta la escala y desplazamiento */
+    }
 }
 
 /* Animación para hacer la transición de las frases */
